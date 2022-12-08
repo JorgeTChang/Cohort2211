@@ -79,3 +79,11 @@ html,body{
     border-radius: 200px 0px 200px 0px;
 
 }
+
+.button {
+    display: flex;
+    color: red;
+    font-weight: bold;
+    text-size-adjust: auto;
+    background-color: black;
+}
