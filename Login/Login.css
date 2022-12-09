@@ -6,6 +6,7 @@ html,body{
     background-size: cover;
     background-image: url("Theforce.jpg");
     background-repeat: no-repeat;
+
 }
 
 .red{
@@ -25,6 +26,7 @@ html,body{
 }
 
 .Title{
+    font-family:Impact;
     justify-content: center;
     flex-direction: row;
     min-width: 20%;
@@ -44,6 +46,8 @@ html,body{
     min-width: 20%;
     max-height: 10%;
     display: flex;
+    opacity: 0.3;
+    font-family:Impact;
 }
 
 .container-fluid{
@@ -82,8 +86,8 @@ html,body{
 
 .button {
     display: flex;
-    color: red;
+    flex-direction: column;
+    color: greenyellow;
     font-weight: bold;
-    text-size-adjust: auto;
     background-color: black;
 }
