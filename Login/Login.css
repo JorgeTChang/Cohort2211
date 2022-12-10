@@ -19,7 +19,6 @@ html,body{
     display: flex;
     justify-content: center;
     font-family:Impact;
-    flex-direction: row;
     min-width: 20%;
     max-height: 10%;
     font-size: 30px;
