@@ -30,12 +30,11 @@ html,body{
     flex-direction: row;
     min-width: 100%;
     max-height: 100%;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .container-phrase1{
     margin-left: auto;
-    width: 500px;
     color: red;
     opacity: 0.3;
 }
@@ -46,7 +45,12 @@ html,body{
     opacity: 0.5;
 }
 
-
+.symbol{
+    display: flex;
+    justify-content: center;
+    min-height: 50%;
+    min-width: 50%;
+}
 
 .container-fluid{
     display: flex;
