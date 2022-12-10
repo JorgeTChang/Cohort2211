@@ -91,4 +91,8 @@ html,body{
     color: greenyellow;
     font-weight: bold;
     background-color: black;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 4px double #cccccc;
+    opacity: 0.5;
 }
