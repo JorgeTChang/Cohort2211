@@ -50,6 +50,7 @@ html,body{
     justify-content: center;
     min-height: 50%;
     min-width: 50%;
+    opacity: 0.8;
 }
 
 .container-fluid{
@@ -91,6 +92,7 @@ html,body{
     color: greenyellow;
     font-weight: bold;
     background-color: black;
+    padding: 15px;
     cursor: pointer;
     border-radius: 20px;
     border: 4px double #cccccc;
