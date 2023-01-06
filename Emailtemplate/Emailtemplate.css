@@ -1,3 +1,22 @@
-.btn-warning {
-        background-color: blue;
+
+
+.email-list {
+
+font-size: large;
+
 }
+
+#menu-col {
+        display: none;
+      }
+      
+#nav-dropdown {
+        display: block;
+      }
+
+
+#nav-dropdown {
+          display: none !important;
+        }
+
+

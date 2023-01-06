@@ -4,27 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Emailtemplate.css" rel="Style sheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="Emailtemplate.css" rel="Style sheet">
     <title>Bootstrap Grid</title>
 </head>
 <body>
     <!--create container-->
     <div class="container-fluid">
-            <!--make a row w/width 100-->
-            <div class="row w-100">
-                <div class="col-sm-# col-md-3 col-lg-#">
-                    first column
+            <!--First row-->
+            <div class="row">
+                <!--First Column in first row-->
+                <div class="col-sm-12 col-md-12 col-lg-4 bg-info" id="menu-col">
+                        <div class="first-Column">
+                      <br>
+                        <h3>Welcome Guest</h3>
+                      <br>
+                      <br>
+ <!--Create Compose button and Email form 
+ Source:https://getbootstrap.com/docs/5.3/components/modal/
+ https://bootsnipp.com/snippets/ORaE8-->
+                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Compose</button>
+        
+                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                                <p class="text-center">New Message</p>
+				                <form class="form-horizontal" role="form">
+					              <div class="form-group">
+				              	<label for="to" class="control-label">To:</label>
+				    	          <div class="col-sm-12">
+                              <input type="email" class="form-control select2-offscreen" id="to" placeholder="Type email" tabindex="-1">
+				              	</div>
+				  	            </div>
+			              		<div class="form-group">
+				              	<label for="cc" class="control-label">CC:</label>
+				              	<div class="col-sm-12">
+                              <input type="email" class="form-control select2-offscreen" id="cc" placeholder="Type email" tabindex="-1">
+				              	</div>
+				              	</div>
+				              	<div class="form-group">
+				               	<label for="bcc" class="control-label">BCC:</label>
+				              	<div class="col-sm-12">
+                              <input type="email" class="form-control select2-offscreen" id="bcc" placeholder="Type email" tabindex="-1">
+				               	</div>
+				              	</div>		  
+			                	</form>
+				              	<div class="form-group">
+					            	<textarea class="form-control" id="message" name="body" rows="12" placeholder="Click here to compose"></textarea>
+				              	</div>
+					
+			              		<div class="form-group">	
+						            <button type="submit" class="btn btn-success">Send</button>
+						            <button type="submit" class="btn btn-default">Draft</button>
+					            	<button type="submit" class="btn btn-danger">Discard</button>
+				              	</div>
+                        </div>
+                        </div>
+                        </div>
+    
+ <!-- Menu options of email template -->
+                        <div class="list-group list-group-flush">
+                                        <button type="button" class="list-group-item list-group-item-action bg-info">
+                                          Inbox<span class="position-absolute top-50 start-50 translate-middle badge rounded-pill bg-danger">
+                                                3+
+                                                <span class="visually-hidden">unread messages</span>
+                                              </span>
+                                        </button>
+                                        <button type="button" class="list-group-item list-group-item-action bg-info">Sent</button>
+                                        <button type="button" class="list-group-item list-group-item-action bg-info">Drafts</button>
+                                        <button type="button" class="list-group-item list-group-item-action bg-info">Archived</button>
+                                        <button type="button" class="list-group-item list-group-item-action bg-info">Deleted</button>
+                                      </div>
+
+                                      <div class="col-sm-12" id="inbox-col">
+                                        <form class="d-flex">
+                                          <div class="btn-group" id=nav-dropdown>
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+                                              aria-expanded="false">
+                                              Menu
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Inbox</a></li>
+                                              <li><a class="dropdown-item" href="#">Sent</a></li>
+                                              <li><a class="dropdown-item" href="#">Drafts</a></li>
+                                              <li><a class="dropdown-item" href="#">Archived</a></li>
+                                              <li><a class="dropdown-item" href="#">Deleted</a></li>
+                                            </ul>
+                                          </div>
             </div>
-            <div class="col-sm-# col-md-3 col-lg-#">
-                    second column
             </div>
-            <div class="col-sm-# col-md-6 col-lg-#">
-                    third column
             </div>
-    </div>
-    </div>
+<!--Second Column in first row-->
+            <div class="col-sm-12 col-md-12 col-lg-8 bg-info text-dark">
+                <div class="Search-Box">
+                <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <img src="search.png" button class="btn btn-outline-success" type="submit"></button>
+                      </div>
+
+                <div class="email-list">
+                <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="email#1" data-bs-toggle="list"
+                          href="#first-email" role="tab" aria-controls="first-email"><pre>Sent by: <strong>  John Wick </strong>                Received: Wed, Jan 27th 2022 10:32am
+                                     <strong>Subject: Where is my dog?</strong></pre>
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="email#2" data-bs-toggle="list"
+                          href="#second-email" role="tab" aria-controls="second-email"><pre>Sent by: <strong>  John Wick #2 </strong>             Received: Thur, Feb 28th 2022 3:57pm
+                                     <strong>Subject: Where are my guns?</strong></pre>
+                        <a class="list-group-item list-group-item-action" id="email#3" data-bs-toggle="list"
+                          href="#third-email" role="tab" aria-controls="third-email"><pre>Sent by: <strong>  John Wick #3 </strong>             Received: Fri, Mar 29th 2022 8:15pm
+                                     <strong>Subject: Where is the Table?</strong></pre>
+                        </a>
+                      </div>
+                </div>
+           </div>
+           
+<!--Create second row and Third Column-->
+           <div class="row bg-info">
+                        <div class="col-sm-12 col-md-12 col-lg-4" id="inbox-col"></div>
+                      <div class="col-sm-12 col-md-12 col-lg-8 text-dark" id="inbox-col">
+                        <div class="col-lg-8" id="message-box">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="first-email" role="tabpanel" aria-labelledby="email#1">
+                    
+                            
+                              <h4><strong>Message from <u>John Wick</u></strong></h4>
+                              <p class="message">Where is my dog?. You better not have harmed him or else, I will come after you.
+                              </p>
+                            </div>
+                            <div class="tab-pane fade" id="second-email" role="tabpanel" aria-labelledby="email#2">
+                              <h4><strong>Message from <u>John Wick #2</u></strong></h4>
+                              <p class="message">Where are my guns?. I will find my guns and I am going to hunt you down!.
+                              </p>
+                            </div>
+                            <div class="tab-pane fade" id="third-email" role="tabpanel" aria-labelledby="email#3">
+                              <h4><strong>Message from <u>John Wick #3</u></strong></h4>
+                              <p class="message">Where is the Table?. I will find everyone of them and make them apologize to my dog!.
+                              </p>
+                            </div>
+                
+<!--Reply button-->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Reply</button>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Reply message</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+ </div>
 
 
 
