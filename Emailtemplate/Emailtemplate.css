@@ -1,22 +1,44 @@
 
 
-.email-list {
+.btn-group {
+  margin-left: 10px;
+  padding-left: 20px;
+}
 
-font-size: large;
+.second-header{
+  margin-left: 10px;
+  padding-left: 20px;
 
 }
 
-#menu-col {
-        display: none;
-      }
-      
-#nav-dropdown {
-        display: block;
-      }
+
+.third-header{
+  margin-left: 10px;
+  padding-left: 20px;
+
+}
 
 
-#nav-dropdown {
-          display: none !important;
-        }
+.input-group {
+  margin: 10px;
+  padding: 20px;
+}
 
+
+.medium-navbar {
+  margin: 10px;
+  padding: 10px;
+}
+
+.email-list {
+font-size: large;
+margin: 10px;
+padding: 20px;
+}
+
+.tab-content{
+  margin: 10px;
+  padding: 20px;
+
+}
 
